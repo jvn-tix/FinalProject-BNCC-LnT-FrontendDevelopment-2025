@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+            <nav>
+                <div class="navbar">
+                    <div class="logo">
+                    <a class="front">IMAM</a>
+                    <a class="rear">PACK</a>
+                </div>
+                <d class="nav-links">
+                    <div class="dropup">
+                        <a href="home.html">Home</a>
+                        <a href="product.html">Product List</a>
+                        <a href="cart.html">Cart</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <a> Menu </a>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#profile">Profile</a>
+                            <a href="#settings">Settings</a>
+                            <a href="#logout">Log Out</a>
+                        </div>
+                        </div>
+            </nav>
+        </div>
+       <div class="jawa">
+        <h1 class="kkk">Kami Menjual Segala Jenis Produk</h1>
+        <h1 class="ngawi">Telusuri Kategori Produk Kami Dibawah</h1>
+       </div>
+    </section>
+
+    <section class="products" id="products">
+
+       
+        <h1 class="heading">Bahan Makanan</h1>
+
+       <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div  onclick="window.open('detail.html')" class="swiper-slide box">
+                <img src="asukayang/susukental.jpg" alt="SusuKental">
+                <h3>Susu Kental Manis</h3>
+                <div class="price">Rp 12.000</div>
+                <button onclick="addToCart('Susu Kental Manis', 'asukayang/susukental.jpg', 12000)" class="btn">Add to Cart</button>
+            </div>
+            <div class="swiper-slide box">
+                <img src="asukayang/BogasariTepungSegitigaBiruProteinSedang1_602a6735-0b57-458b-871f-c4ef7f36cf1e_900x900.jpeg" alt="">
+                <h3>Tepung Terigu</h3>
+                <div class="price">Rp 17.000</div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="asukayang/coklatbubuk.jpg" alt="">
+                <h3>Cokelat Bubuk</h3>
+                <div class="price">Rp 500/pcs</div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="asukayang/krimer.jpg" alt="">
+                <h3>Krimer</h3>
+                <div class="price">Rp 12.000</div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="asukayang/pewarna.jpeg">
+                <h3>Pewarna Makanan</h3>
+                <div class="price">Rp 12.000</div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="asukayang/bubukcabe.jpg" alt="">
+                <h3>Bubuk Cabe</h3>
+                <div class="price">Rp 17.000</div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="asukayang/margarin.png" alt="">
+                <h3>Margarin</h3>
+                <div class="price">Rp 500/pcs</div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="asukayang/meses.jpeg" alt="">
+                <h3>Meses</h3>
+                <div class="price">Rp 12.000</div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+        </div>
+        
+       </div>
+       <h1 class="heading">Kemasan</h1>
+       
+       <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="asukayang/mangkok.png" alt="">
+                <h3>Mangkuk Plastik</h3>
+                <div class="price">Rp 300/pcs</div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="asukayang/styrofoam.png" alt="">
+                <h3>Styrofoam</h3>
+                <div class="price">Rp 400/pcs</div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="asukayang/thinwall.jpg" alt="">
+                <h3>Thinwall</h3>
+                <div class="price">Rp 2.000/pcs</div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="asukayang/gelas.jpg" alt="">
+                <h3>Cup</h3>
+                <div class="price">Rp 200/pcs</div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="asukayang/piring.png" alt="">
+                <h3>Piring Plastik</h3>
+                <div class="price">Rp 200/pcs</div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="asukayang/kertas.jpg" alt="">
+                <h3>Kertas Minyak</h3>
+                <div class="price">Rp 8.000</div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="asukayang/mika.jpg" alt="">
+                <h3>Plastik Mika</h3>
+                <div class="price">Rp 500/pcs</div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <h1 class="heading">Plastik</h1>
+
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="asukayang/negro.jpeg" alt="">
+                    <h3>Plastik Kresek</h3>
+                    <div class="price">Rp 300/pcs</div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="asukayang/plastikgelas.jpg" alt="">
+                    <h3>Plastik Gelas</h3>
+                    <div class="price">Rp 400/pcs</div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="asukayang/opp.jpg" alt="">
+                    <h3>Plastik Opp</h3>
+                    <div class="price">Rp 2.000/pcs</div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="asukayang/plastikkklip.jpg" alt="">
+                    <h3>Plastik Klip</h3>
+                    <div class="price">Rp 200/pcs</div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="asukayang/pe.jpg" alt="">
+                    <h3>Plastik Pe</h3>
+                    <div class="price">Rp 200/pcs</div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="asukayang/wrap.jpg">
+                    <h3>Plastik Wrap</h3>
+                    <div class="price">Rp 8.000</div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+       </div>
+    </section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>        
+<script src="script.js"></script>
+</body>
+</html>

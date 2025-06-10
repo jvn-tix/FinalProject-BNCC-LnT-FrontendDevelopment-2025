@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+
+  @keyframes kontol{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+  }
+/*---------------------homepage-----------------------------*/
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:  linear-gradient(rgba(4,9,30,0.7),rgba(210, 240, 120, 0.7)),url(hafez/WhatsApp\ Image\ 2024-12-13\ at\ 22.55.26.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e8e11b;
+    padding: 10px 20px;
+    color: white;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: 'Poppins';
+}
+.logo .front{
+    color: black;
+}
+
+.logo .rear{
+    color: red;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    padding-right: 75px;
+}
+
+.nav-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Poppins';
+}
+
+.dropup a{
+    position: relative;
+    color: #333; 
+    text-decoration: none;
+    padding-bottom: 5px; 
+    overflow: hidden;
+}
+
+.dropup a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom center;
+    transition: transform 0.3s ease-out;
+}
+
+.dropup a:hover::after{
+    transform: scaleX(1);
+}
+
+.nav-links input {
+    padding: 5px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.dropbtn a{
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: #2c3e50;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Poppins';
+}
+
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 42px;
+    font-family: 'Poppins';
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Poppins';
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 5px solid #fff;
+    padding: 12px 34px;
+    font-size: 17px;
+    font-family: 'Poppins';
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.hero-btn:hover{
+    border: 1px solid #ffffff;
+    background: #dff537;
+    transition: 0.3s;
+    color: black;
+}
+
+nav.fa{
+    display: none;
+}
+
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 2.5rem;
+    font-family: 'Poppins';
+    color: black;
+}
+
+.heading span{
+    background: rgb(234, 234, 17);
+    color: #fff;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+.fitur .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1.5rem;
+}
+.fitur .box-container .box{
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    font-family: 'Poppins';
+    animation: kontol linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.box img{
+    height: 40%;
+    width: auto;
+}
+
+.kanjut .kontainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 15rem;
+}
+.kanjut .kontainer .persegi{
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    font-family: 'Poppins';
+    text-align: center;
+    background: #fff;
+    box-shadow: #2c3e50;
+    outline: black;
+    outline-offset: -1rem;
+    transition: .2s;
+    animation: kontol linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.persegi h1{
+    font-size: .8rem;
+    font-weight: 400;
+}
+.kanjut .kontainer .persegi:hover{
+    outline: black;
+    outline-offset: 0rem;
+}
+.kanjut .kontainer .persegi img{
+    margin: 1rem 0;
+    height: 15rem;
+}
+
+/* ----------------- Responsive Design ------------------- */
+
+/* Tablet (lebar maksimal 992px) */
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    padding-right: 20px;
+    width: 100%;
+  }
+
+  .nav-links a,
+  .dropbtn {
+    margin: 10px 0;
+  }
+
+  .text-box h1 {
+    font-size: 32px;
+  }
+
+  .text-box p {
+    font-size: 12px;
+  }
+
+  .hero-btn {
+    padding: 10px 24px;
+    font-size: 15px;
+  }
+}
+
+/* Smartphone (lebar maksimal 768px) */
+@media (max-width: 500px) {
+   .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+
+  .text-box h1 {
+    font-size: 24px;
+  }
+
+  .text-box p {
+    font-size: 12px;
+  }
+
+  .hero-btn {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .fitur .box-container,
+  .kanjut .kontainer {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+  .kanjut .kontainer {
+    margin-bottom: 8rem;
+  }
+
+  .kanjut .kontainer .persegi img {
+    height: 10rem;
+  }
+
+  .dropdown {
+    margin-left: 0;
+  }
+
+  .dropdown-content {
+    min-width: 100%;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item img {
+    width: 60px;
+  }
+}
+

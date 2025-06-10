@@ -1,0 +1,94 @@
+.poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+body{
+    justify-content: center; 
+    align-items: center; 
+    display: flex;
+    height: 100vh;
+}
+
+.box{
+    border: 1px solid black;
+    padding: 25px;
+    margin: 0px;
+    margin-bottom: 15px;
+    width: 250px;
+}
+.login-form h2{
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    gap: 5px;
+    position: relative;
+}
+
+.login-form button{
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    cursor: pointer;
+    background-color: rgb(3, 50, 160);
+    color: white;
+}
+
+.input-group input{
+    border: 0.5px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.login-form button:hover{
+    color: white;
+    background-color: black;
+}
+
+.login-form a{
+    text-decoration: none;
+    color: blue;
+    font-family: 'Poppins';
+}
+
+.login a{
+    color: #fff;
+}
+
+.input-group i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}

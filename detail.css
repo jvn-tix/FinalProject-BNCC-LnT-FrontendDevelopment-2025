@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.header{
+    width: 100%;
+    /*background-image: linear-gradient(rgba(4,9,30,0.7),rgba(210, 240, 120, 0.7)),url(hafez/WhatsApp\ Image\ 2024-12-13\ at\ 22.55.26.jpeg);
+    background-position: center;
+    background-size: cover;*/
+    position: relative;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e8e11b;
+    padding: 10px 20px;
+    color: white;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: 'Poppins';
+}
+
+.logo .front{
+    color: black;
+}
+
+.logo .rear{
+    color: red;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    padding-right: 75px;
+}
+
+.nav-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Poppins';
+}
+
+.dropup a{
+    position: relative;
+    color: #333; 
+    text-decoration: none;
+    padding-bottom: 5px; 
+    overflow: hidden;
+}
+.dropup a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom center;
+    transition: transform 0.3s ease-out;
+}
+
+.dropup a:hover::after{
+    transform: scaleX(1);
+}
+
+.nav-links input {
+    padding: 5px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.dropbtn a{
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: #2c3e50;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Poppins';
+}
+
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 1px solid #000000;
+    padding: 12px 34px;
+    font-size: 13px;
+    font-family: 'Poppins';
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.btn:hover{
+    background: #000000;
+    color: #fff;
+}
+
+.detail-page{
+    font-family: Poppins;
+}
+
+.product-detail-page{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.img-box{
+    margin-left: 50px;
+}
+
+.img-box img{
+    width: 30rem;
+}
+
+.text-box{
+    padding-top: 100px;
+    margin-right: 100px;
+}
+
+.text-box h1{
+    font-weight: 800;
+    font-size: 45px;
+}
+
+.text-box h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.rating-box{
+    margin-left: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 50px;
+}
+
+.rating-box h1{
+    margin-bottom: 13px;
+}
+
+.rating-text-box h1{
+    font-size: 35px;
+}
+
+.rating-text-box h3{
+    margin-bottom: 14px;
+}
+
+.rating{
+    border: #dadada 1px solid;
+    padding: 5%;
+    border-radius: 5px;
+}
+
+.rating-star{
+    margin-top: 10px;
+    display: flex;
+    color: #e8e11b;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    padding-right: 0;
+  }
+
+  .nav-links a {
+    margin: 5px 0;
+  }
+
+  .product-detail-page {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .img-box,
+  .text-box,
+  .rating-box {
+    margin: 20px 0;
+    padding: 0 20px;
+  }
+
+  .img-box img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .text-box {
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .text-box h1 {
+    font-size: 30px;
+  }
+
+  .dropbtn {
+    width: 100%;
+  }
+}

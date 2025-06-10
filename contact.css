@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+/*---------------------homepage-----------------------------*/
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e8e11b;
+    padding: 1px 6px;
+    color: white;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: 'Poppins';
+    padding-left: 10px;
+}
+.logo .front{
+    color: black;
+}
+
+.logo .rear{
+    color: red;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    padding-right: 65px;
+}
+
+.nav-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Poppins';
+}
+
+.dropup a{
+    position: relative;
+    color: #333; 
+    text-decoration: none;
+    padding-bottom: 5px; 
+    overflow: hidden;
+}
+.dropup a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom center;
+    transition: transform 0.3s ease-out;
+}
+
+.dropup a:hover::after{
+    transform: scaleX(1);
+}
+
+.nav-links input {
+    padding: 5px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.dropbtn a{
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: #2c3e50;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Poppins';
+}
+
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info, .contact-form {
+    margin-bottom: 20px;
+    font-family: 'Poppins';
+    margin-top: 20%;
+}
+
+.contact-info p {
+    font-size: 16px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+.social-media{
+    font-family: 'Poppins';
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+}
+
+.social-icons a i {
+    font-size: 30px;
+}
+
+.social-icons a:nth-child(1) i { color: #1877F2; } 
+.social-icons a:nth-child(2) i { color: #E4405F; } 
+
+.social-icons a:hover {
+    transform: translateX(10px);
+    color: #0056b3;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+}
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  /* Navbar */
+  .navbar {
+    padding: 12px 24px;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    padding-right: 40px;
+  }
+
+  .nav-links a {
+    font-size: 1.2rem;
+    margin: 0 15px;
+  }
+
+  .nav-links input {
+    padding: 8px;
+    font-size: 1rem;
+  }
+
+  .dropbtn {
+    font-size: 1rem;
+    padding: 10px 18px;
+  }
+
+  /* Main Content */
+  main {
+    width: 90%;
+    margin: 30px auto;
+    padding: 30px;
+    font-size: 1.1rem;
+  }
+
+  .contact-info p {
+    font-size: 18px;
+  }
+
+  .contact-form label {
+    font-size: 1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 12px 18px;
+    font-size: 1rem;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 1rem;
+  }
+
+  /* Social Media Section */
+  .social-icons a {
+    font-size: 1.1rem;
+  }
+
+  .social-icons a i {
+    font-size: 32px;
+  }
+}
